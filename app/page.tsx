@@ -15,10 +15,6 @@ export default function Home() {
   return (
     <div className="relative w-full overflow-hidden bg-black">
       {/* Background Image */}
-      
-
-      {/* Navbar */}
-     <Navbar />
 
       {/* Hero Section */}
       <Hero />
@@ -27,7 +23,6 @@ export default function Home() {
       <Testimonials />
       <CTA />
       <FAQ />
-      <Footer />
     </div>
   );
 }
