@@ -28,16 +28,16 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <h4 className="text-white font-semibold mb-2">Navigation</h4>
           <nav className="flex flex-col gap-2 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition">
+            <a href="/" className="text-gray-400 hover:text-white transition">
               Home
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
+            <a href="/services" className="text-gray-400 hover:text-white transition">
               Services
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
+            <a href="/about" className="text-gray-400 hover:text-white transition">
               About
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
+            <a href="/contact" className="text-gray-400 hover:text-white transition">
               Contact
             </a>
           </nav>

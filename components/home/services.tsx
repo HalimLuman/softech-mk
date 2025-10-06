@@ -25,11 +25,6 @@ export default function Services() {
         "Ensure your products meet the highest quality standards through manual and automated testing.",
     },
     {
-      title: "Cloud Solutions",
-      description:
-        "Leverage cloud technologies for flexibility, security, and performance optimization.",
-    },
-    {
       title: "IT Consulting",
       description:
         "Get expert advice to optimize workflows, reduce costs, and plan digital transformation strategies.",

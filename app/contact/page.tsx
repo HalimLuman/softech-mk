@@ -7,15 +7,13 @@ import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Linkedin, Twitter, Git
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import CTA from "@/components/home/cta"
-import Testimonials from "@/components/home/testimonials"
 
 const contactInfo = [
   {
     icon: <Mail className="w-6 h-6" />,
     title: "Email",
-    value: "hello@softech.com",
-    link: "mailto:hello@softech.com",
+    value: "softech.mk@outlook.com",
+    link: "mailto:softech.mk@outlook.com",
   },
   {
     icon: <Phone className="w-6 h-6" />,
@@ -25,9 +23,8 @@ const contactInfo = [
   },
   {
     icon: <MapPin className="w-6 h-6" />,
-    title: "Office",
-    value: "123 Tech Street, San Francisco, CA 94105",
-    link: "https://maps.google.com",
+    title: "Location",
+    value: "Skopje, North Macedonia",
   },
   {
     icon: <Clock className="w-6 h-6" />,
@@ -66,14 +63,6 @@ const ContactPage = () => {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-16 lg:px-28 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-red-600 rounded-full text-sm font-semibold"
-          >
-            CONTACT US
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -81,9 +70,7 @@ const ContactPage = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
           >
-            Let's Build Something
-            <br />
-            <span className="text-red-600">Extraordinary Together</span>
+            CONTACT US
           </motion.h1>
 
           <motion.p

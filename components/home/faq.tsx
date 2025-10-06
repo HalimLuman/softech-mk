@@ -69,26 +69,28 @@ export default function FAQ() {
       </div>
 
       {/* FAQ Accordion */}
-      <div className="max-w-3xl mx-auto flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-xl shadow-sm">
+      <div className="max-w-4xl mx-auto flex flex-col divide-y divide-gray-200 border border-gray-200 rounded-xl shadow-sm">
         {faqs.map((faq, i) => (
           <div key={i} className="p-5 sm:p-6 hover:bg-gray-50 transition">
             <button
               onClick={() => toggleFAQ(i)}
               className="flex justify-between items-center w-full text-left group"
             >
-              <h4 className="font-medium text-lg text-gray-900 group-hover:text-blue-600 transition">
+              <h4 className="font-medium text-lg text-gray-900 group-hover:text-red-600 transition">
                 {faq.question}
               </h4>
               <ChevronDown
                 className={`w-5 h-5 text-gray-500 transition-transform duration-300 ${
-                  openIndex === i ? "rotate-180 text-blue-600" : ""
+                  openIndex === i ? "rotate-180 text-red-600" : ""
                 }`}
               />
             </button>
 
             <div
               className={`overflow-hidden transition-all duration-300 ${
-                openIndex === i ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"
+                openIndex === i
+                  ? "max-h-40 mt-3 opacity-100"
+                  : "max-h-0 opacity-0"
               }`}
             >
               <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
